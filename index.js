@@ -1,9 +1,9 @@
-const { fstat } = require('fs');
+const fs = require('fs');
 const {prompt} = require('inquirer');
 
 
-const generateREADME = ({title, description, installation, usage, contribution, test, licence, github, email }) =>
-` #${title}
+const generateREADME = ({title, description, installation, usage, contribution, test, license, github, email }) =>
+` # ${title}
 
 ## Description:
 
@@ -28,7 +28,8 @@ ${usage}
 
 ## License
 ---
-${licence}
+
+![License](https://img.shields.io/badge/License-${license}-brightgreen.svg?style=plastic&logo=appveyor)
 
 ## Contributing:
 ---
@@ -40,7 +41,8 @@ ${test}
 
 ## Questions
 ---
-[GitHub](${github})
+[GitHub](https://github.com/${github})
+ 
 You can reach me at ${email}`
 
 
@@ -70,7 +72,7 @@ prompt([
         type: 'list',
         message: 'License:',
         name: 'license',
-        choices: ['']
+        choices: ['NPM', 'GitHub', 'GitLab', 'APM']
     },
     {
         type: 'input',
@@ -95,7 +97,7 @@ prompt([
   ])
   .then((answer) => {
     const ReadMEContent = generateREADME(answer);
-        fs. writeFile('README.md', ReadMEContent, (err) =>
+        fs.writeFile('README.md', ReadMEContent, (err) =>
         err ? console.log(err) : console.log('Successfully created Readme.md!')
         );
   })
