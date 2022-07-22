@@ -1,36 +1,45 @@
+const { fstat } = require('fs');
 const {prompt} = require('inquirer');
 
 
 const generateREADME = ({title, description, installation, usage, contribution, test, licence, github, email }) =>
 ` #${title}
 
-##Description:
+## Description:
+
 ${description}
 
-##Table of Contents
+## Table of Contents
 
-*[]
-*[]
-*[]
-*[]
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
 
-
-###Installation:
+## Installation:
+---
 ${installation}
 
-###Usage:
+## Usage:
+---
 ${usage}
 
-###License
+## License
+---
 ${licence}
 
-###Contributing:
+## Contributing:
+---
 ${contribution}
 
-###Tests:
+## Tests:
+---
 ${test}
 
-###Questions
+## Questions
+---
 [GitHub](${github})
 You can reach me at ${email}`
 
@@ -84,3 +93,9 @@ prompt([
         name: 'email',
     },
   ])
+  .then((answer) => {
+    const ReadMEContent = generateREADME(answer);
+        fs. writeFile('README.md', ReadMEContent, (err) =>
+        err ? console.log(err) : console.log('Successfully created Readme.md!')
+        );
+  })
