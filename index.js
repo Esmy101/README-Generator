@@ -3,7 +3,7 @@ const {prompt} = require('inquirer');
 
 
 const generateREADME = ({title, description, installation, usage, contribution, test, license, github, email }) =>
-` # ${title}
+`  ${title}
 
 ## Description:
 
@@ -29,7 +29,7 @@ ${usage}
 ## License
 ---
 
-![License](https://img.shields.io/badge/License-${license}-brightgreen.svg?style=plastic&logo=appveyor)
+![License](https://img.shields.io/badge/License-${license}-blueviolet.svg?style=plastic&logo=appveyor)
 
 ## Contributing:
 ---
@@ -42,7 +42,7 @@ ${test}
 ## Questions
 ---
 [GitHub](https://github.com/${github})
- 
+
 You can reach me at ${email}`
 
 
@@ -72,7 +72,7 @@ prompt([
         type: 'list',
         message: 'License:',
         name: 'license',
-        choices: ['NPM', 'GitHub', 'GitLab', 'APM']
+        choices: ['MIT', 'Apache', 'Apache-2.0']
     },
     {
         type: 'input',
