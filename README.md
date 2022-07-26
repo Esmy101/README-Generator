@@ -1,4 +1,4 @@
- # README Generator
+ # README Generator 🖥💬
 
 ## Description:
 
@@ -20,7 +20,7 @@ _In the terminal the user is prompted for information that they would like displ
 
 _Once all the information is entered then it will create the README file._
 
-![image](./images/Screenshot%202022-07-25%20205050.png)
+![image](./images/Screenshot%202022-07-25%20213527.png)
 
 
 ## Tests:
@@ -31,4 +31,4 @@ _Once all the information is entered then it will create the README file._
 ---
 [GitHub](https://github.com/)
 
-Here is a [video]() tutorial you want watch. 
+Here is a [video](https://drive.google.com/file/d/1urMbqX4UNsVn1--pfMglt8CzZNMq7W-W/view?usp=sharing) tutorial you want watch what this works. 
