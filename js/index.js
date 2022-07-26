@@ -72,17 +72,17 @@ prompt([
         type: 'list',
         message: 'License:',
         name: 'license',
-        choices: ['MIT', 'Apache', 'Apache-2.0']
+        choices: ['MIT', 'Apache']
     },
     {
         type: 'input',
         message: 'Contributing:',
-        name: 'contributing',
+        name: 'contribution',
     },
     {
         type: 'input',
         message: 'Tests:',
-        name: 'tests',
+        name: 'test',
     },   
     {
         type: 'input',
