@@ -1,41 +1,34 @@
- # Testing
+ # README Generator
 
 ## Description:
 
-
+A README file generator that can create a professional README for a  new project
 
 ## Table of Contents
 
-* [Installation](#installation)
-* [Usage](#usage)
-* [License](#license)
-* [Contributing](#contributing)
+* [Images](#images)
 * [Tests](#tests)
 * [Questions](#questions)
 
-## Installation:
+## Images:
 ---
 
+_In the terminal the user is prompted for information that they would like displayed in those catagories._
 
-## Usage:
----
+![image](./images/Screenshot%202022-07-25%20204934.png)
 
 
-## License
----
+_Once all the information is entered then it will create the README file._
 
-![License](https://img.shields.io/badge/License-MIT-blueviolet.svg?style=plastic&logo=appveyor)
+![image](./images/Screenshot%202022-07-25%20205050.png)
 
-## Contributing:
----
-undefined
 
 ## Tests:
 ---
-undefined
+7 test were done to make sure anything entered in th terminal would display on the README
 
 ## Questions
 ---
 [GitHub](https://github.com/)
 
-You can reach me at 
+Here is a [video]() tutorial you want watch. 

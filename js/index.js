@@ -3,7 +3,7 @@ const {prompt} = require('inquirer');
 
 
 const generateREADME = ({title, description, installation, usage, contribution, test, license, github, email }) =>
-`  ${title}
+` # ${title}
 
 ## Description:
 
