@@ -31,4 +31,4 @@ _Once all the information is entered then it will create the README file._
 ---
 [GitHub](https://github.com/)
 
-Here is a [video](https://drive.google.com/file/d/1urMbqX4UNsVn1--pfMglt8CzZNMq7W-W/view?usp=sharing) tutorial you want watch what this works. 
+Here is a walkthrough [video](https://drive.google.com/file/d/1urMbqX4UNsVn1--pfMglt8CzZNMq7W-W/view?usp=sharing). 
